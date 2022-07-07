@@ -11,10 +11,9 @@ public class EvenOrOdd {
         System.out.print("Enter a number: ");
         int num = reader.nextInt();
 
-        if(num % 2 == 0)
-            System.out.println(num + " is even");
-        else
-            System.out.println(num + " is odd");
+       String evenOdd = (num % 2 == 0) ? "even" : "odd";
+
+       System.out.println(num + " is " + evenOdd);
         
         reader.close();
         
